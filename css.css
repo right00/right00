@@ -1,0 +1,44 @@
+
+body {
+    background: url("背景.png");
+    background-repeat: no-repeat;
+}
+div{
+    border: 20px double violet;
+}
+  h1{
+      color:white;
+      font-family:fantasy;
+      font-size:90px;
+      font-weight:bold;
+      text-align:center; 
+
+}
+h2{ color:skyblue;
+    font-family:sans-serif;
+    font-size:40px;
+    font-weight:normal;
+    text-align:left; 
+
+}
+h3{
+    color:black;
+    font-family:sans-serif;
+    font-size:30px;
+    font-weight:normal;
+    text-align:left; 
+
+}
+li{ color:black;
+    font-family:sans-serif;
+    font-size:25px;
+    font-weight:normal;
+    text-align:left; 
+
+}
+h5{ color:gray;
+}
+img {
+    display: none;
+  }
+  
