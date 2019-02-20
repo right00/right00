@@ -38,11 +38,11 @@ li{ color:black;
 }
 h5{ color:gray;
 }
-img#needle {
-    width: 500px; height:300px;
+img.needle {
+    width: 50%; height:auto;
   }
 img#block{
-    width: 200px; height: 250px;
+    width: 50%; height: auto;
 }
   body {background: url(img1.png);
     background-size:contain;
@@ -54,6 +54,8 @@ h1{
     font-size:90px;
     font-weight:bold;
     text-align:center; 
+    padding-top: 20%;
+    padding-bottom: 20%;
 
 }
 h6{
