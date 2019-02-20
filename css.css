@@ -58,12 +58,12 @@ h1{
 }
 h6{
     color: lightseagreen;
-    font-size:3vh;
+    font-size:5vh;
     font-weight:bold;
 }
 #background{
     padding-bottom: 20vw;
 }
-.body{
+#body{
     overflow: hidden;
 }
