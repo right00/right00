@@ -64,3 +64,6 @@ h6{
 #background{
     padding-bottom: 20vw;
 }
+.body{
+    overflow: hidden;
+}
