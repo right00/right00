@@ -10,13 +10,13 @@
 
 
 #prof{
-    border: 20px double violet;
+    border: 15vh double violet;
 }
 
 
 h2{ color:skyblue;
     font-family:sans-serif;
-    font-size:40px;
+    font-size:10vh;
     font-weight:normal;
     text-align:left; 
 
@@ -24,14 +24,14 @@ h2{ color:skyblue;
 h3{
     color:black;
     font-family:sans-serif;
-    font-size:30px;
+    font-size:7.5vh;
     font-weight:normal;
     text-align:left; 
 
 }
 li{ color:black;
     font-family:sans-serif;
-    font-size:25px;
+    font-size:3vh;
     font-weight:normal;
     text-align:left; 
 
@@ -51,7 +51,7 @@ img#block{
 h1{
     color:white;
     font-family:sans-serif;
-    font-size:90px;
+    font-size:30vh;
     font-weight:bold;
     text-align:center; 
     padding-top: 20%;
@@ -60,6 +60,9 @@ h1{
 }
 h6{
     color: lightseagreen;
-    font-size:50px;
+    font-size:3vh;
     font-weight:bold;
+}
+#background{
+    padding-bottom: 50%;
 }
