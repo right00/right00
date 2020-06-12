@@ -1,0 +1,112 @@
+.topbody{
+    text-align: center
+}
+p.topname{  
+    margin-top: -1vw;
+    margin-left:6.5vw;
+    font-size: 8vw;
+    color:gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out
+}
+p.topname:hover{
+    color:goldenrod;
+}
+.box{
+    text-align: center;
+    display: inline-block;
+    font-size: 0%;
+    width: 75vw;
+}
+.works{
+    display:inline-block;
+    width:15vw;
+    height:40vw;
+    background-size: cover;
+    background-position: center center;
+
+}
+.filter{
+    background-color:rgba(0, 0, 0, 0.3);
+    width:100%;
+    height:100%;
+}
+#work1{
+    background-image: url("../picture/boy.png");
+}
+#work2{
+    background-image: url("../picture/game1.png");
+}
+#work3{
+    background-image:url("../picture/icon.png")
+}
+#work4{
+    background-image: url("../picture/block.png")
+}
+#work5{
+    background-image: url("../picture/girl.png")
+}
+.works:hover > .filter{
+    display:none;
+}
+.works:focus > .filter{
+    display:none;
+}
+.works:focus{
+    width:70vw;
+    height: 40vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    /*transition: 1s ease-in-out;*/
+}
+.box:focus-within>.works:not(:focus){
+    display:none;
+}
+
+.box:focus-within{
+    background-color: black;
+
+}
+.linkbox{
+text-align: right;
+margin-left: 6.5vw;
+}
+.linktable{
+    display: inline-block;
+    width:60%;
+    text-align: right;
+}
+.toplink{
+    color:gray;
+    font-size: 2vw;
+}
+.toplink:hover{
+    color:blue;
+    font-size: 2vw;
+}
+.closebox{
+        text-align: center;
+}
+.close{
+    width: 7vw;
+    display: inline-block;
+    font-size: 2vw;
+}
+.close:hover{
+    width: 7vw;
+    display: inline-block;
+    color: blue;
+}
+.close:active{
+    width: 7vw;
+    display: inline-block;
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
