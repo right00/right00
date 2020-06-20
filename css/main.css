@@ -99,12 +99,15 @@ width:100%;
 }
 #footer{
     background-color: black;
-    color: whitesmoke;
     height:80px;
     padding-top: 10px;
     position: relative;;
     bottom:0;
     margin: 0 0 0 0;
+}
+#footer a{
+    color: whitesmoke;
+    text-decoration: none;
 }
 .phone{
     display: none;
