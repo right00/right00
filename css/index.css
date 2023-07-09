@@ -1,9 +1,72 @@
-#name{
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-#name img{
-    display: inline-block;
-    width:30%;
-}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  .section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    transition: background-color 1.5s ease;
+    flex-direction: column; /* 追加 */
+    text-align: center; /* 追加 */
+  }
+  
+  .section:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #aaa;
+  }
+  
+  .section.active {
+    background-color: #222;
+  }
+  
+  .section h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+  
+  .section p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .section ul {
+    list-style-type: disc;
+    margin-left: 24px;
+    padding-left: 24px;
+  }
+  
+  .section li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .section a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .section a:hover {
+    color: #444;
+  }
+
+  /* スマートフォン対応 */
+  @media (max-width: 600px) {
+    .section h1 {
+      font-size: 48px;
+    }
+    
+    .section p,
+    .section ul,
+    .section li {
+      font-size: 16px;
+    }
+  }
