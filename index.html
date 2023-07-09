@@ -2,145 +2,43 @@
 <html>
 <head>
   <title>My Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-    }
-    
-    .section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 24px;
-      transition: background-color 0.3s ease;
-      flex-direction: column; /* 追加 */
-      text-align: center; /* 追加 */
-    }
-    
-    .section:nth-child(even) {
-      background-color: #f2f2f2;
-      color: #000;
-    }
-    
-    .section.active {
-      background-color: #222;
-    }
-    
-    .section h1 {
-      font-size: 64px;
-      margin-bottom: 16px;
-    }
-    
-    .section p {
-      font-size: 18px;
-      margin-bottom: 24px;
-    }
-    
-    .section ul {
-      list-style-type: disc;
-      margin-left: 24px;
-      padding-left: 24px;
-    }
-    
-    .section li {
-      font-size: 18px;
-      margin-bottom: 8px;
-      text-align: left;
-    }
-    
-    .section a {
-      color: #222;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .section a:hover {
-      color: #444;
-    }
-
-    /* スマートフォン対応 */
-    @media (max-width: 600px) {
-      .section h1 {
-        font-size: 48px;
-      }
-      
-      .section p,
-      .section ul,
-      .section li {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <!-- CSS読み込み ./css/index.css -->
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
   <div class="section" id="about">
-    <h1>About Me</h1>
-    <p style="margin-left: auto; margin-right: auto; max-width: 800px;">I am a full-stack engineer with a passion for creating innovative web applications. I graduated from an information systems program and have experience in game development using Unity. I am currently focusing on becoming a full-stack engineer.</p>
+        <h1>Right00 <br> の <br> ポートフォリオ</h1>
   </div>
+  <div class="section" id="about">
+    <h1>About Me</h1>
+    <ul>
+        <li>学歴 : <p>情報系学部を卒業</p></li>
+        <li>職歴 : <p>IT系企業で自社のWebアプリケーションの開発</p></li>
+        <br>
+        <!--段落のtextを左に揃える-->
+        <p style="text-align: left;" >
+            大学で情報系学部を専攻し、論理回路やアルゴリズムなどの基礎的な知識を学びました。
+            私は大学で情報系学部を専攻し、論理回路やアルゴリズムなどの基礎的な知識を学びました。現在はIT企業で自社開発のエンジニアとして働いています。大学時代にはゲーム制作のサークルに所属し、Unityを使ったゲーム制作の経験もあります。現在はアジャイル開発に積極的に取り組んで学んでいます。現在はIT企業で自社開発のエンジニアとして働いています。アジャイル開発・運用に積極的に取り組んで学んでいます。</p>
+    </ul>
+    </div>
   
   <div class="section" id="skills">
     <h1>Skills</h1>
     <ul>
-      <li>Golang</li>
-      <li>PHP</li>
-      <li>Python</li>
-      <li>TypeScript</li>
-      <li>MySQL</li>
-      <li>PostgreSQL</li>
-      <li>Redis</li>
-      <li>OpenSearch</li>
-      <li>React</li>
-      <li>Material-UI</li>
-      <li>AWS</li>
-    </ul>
-  </div>
-  
-  <div class="section" id="projects">
-    <h1>Projects</h1>
-    <ul>
-      <li><a href="#">Project 1</a> - Description of project 1.</li>
-      <li><a href="#">Project 2</a> - Description of project 2.</li>
-      <li><a href="#">Project 3</a> - Description of project 3.</li>
+      <li>言語 : GO,PHP,Python,TypeScript</li>
+      <li>DB : mysql,posgresSQL,redis,opensearch</li>
+      <li>その他 : React,graphql,laravel,django</li>
     </ul>
   </div>
   
   <div class="section" id="contact">
     <h1>Contact</h1>
     <ul>
-      <li>Email: example@example.com</li>
-      <li>LinkedIn: <a href="#">linkedin.com/example</a></li>
-      <li>GitHub: <a href="#">github.com/example</a></li>
+      <li>Email: masaki.iniad@gmail.com</li>
+      <li>GitHub: <a href="https://github.com/right00" style="color : gray">github.com/right00</a></li>
     </ul>
   </div>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('.section');
-      
-      function handleScroll() {
-        const scrollTop = window.scrollY;
-        const windowHeight = window.innerHeight;
-        
-        sections.forEach(function(section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-          
-          if (scrollTop >= sectionTop - windowHeight * 0.8 && scrollTop < sectionTop + sectionHeight) {
-            section.classList.add('active');
-          } else {
-            section.classList.remove('active');
-          }
-        });
-      }
-      
-      window.addEventListener('scroll', handleScroll);
-      handleScroll(); // 初期表示時にもアクティブなセクションを設定する
-    });
-  </script>
+  <!-- js読み込み ./js/scroll-anime.js -->
+    <script src="./js/scroll-anime.js"></script>
 </body>
 </html>
